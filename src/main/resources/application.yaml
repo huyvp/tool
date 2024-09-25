@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: Tool
+  datasource:
+    url: jdbc:postgresql://localhost:5432/tool
+    username: ${POSTGRES_USERNAME:postgres}
+    password: ${POSTGRES_PASSWORD:hh1122334455}
+    driver-class-name: org.postgresql.Driver
+  servlet:
+    multipart:
+      max-file-size: 1000GB
+      max-request-size: 1000GB
+      enabled: true
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+    default-statement-timeout: 30
+logging:
+  file:
+    name: tool.log
+server:
+  port: 8088

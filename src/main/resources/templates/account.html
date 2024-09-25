@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<head>
+    <title>Password Manager</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body>
+<div class="header">
+    <div>
+        <a href="/accounts" class="logo tab">Password Manager</a>
+    </div>
+    <div class="tab">
+        <a href="/accounts/common" th:class="${uri == '/accounts/common'}? 'active':'tab'">Common</a>
+        <a href="/accounts/dev" th:class="${uri == '/accounts/dev'}? 'active':'tab'">Dev</a>
+        <a href="/accounts/stg" th:class="${uri == '/accounts/stg'}? 'active':'tab'">Stg</a>
+        <a href="/accounts/prod" th:class="${uri == '/accounts/prod'}? 'active':'tab'">Prod</a>
+    </div>
+    <div>
+        <button class="tab create" onclick="createClick()">Create Account</button>
+    </div>
+</div>
+<div class="content">
+    <table>
+        <tr style="border-bottom: #98ddde solid 1px">
+            <th>Type</th>
+            <th>Username</th>
+            <th></th>
+            <th>Password</th>
+            <th></th>
+            <th>Updated By</th>
+            <th>Last Updated</th>
+            <th>Action</th>
+        </tr>
+        <tr th:each="password : ${passwords}">
+            <td th:text="${password.type}" width="20%"></td>
+            <td th:text="${password.username}" width="10%"></td>
+            <td width="10%">
+                <button class="copyUsername copyButton"><img src="/image/copy.png" alt=""></button>
+            </td>
+            <td width="10%" th:text="${password.password}"></td>
+            <td width="10%">
+                <button class="copyPassword copyButton"><img src="/image/copy.png" alt=""></button>
+            </td>
+            <td th:text="${password.updatedBy}" width="10%"></td>
+            <td th:text="${password.updatedAt}" width="20%"></td>
+            <td width="10%">
+                <button class="editButton"><img src="/image/edit.png" alt=""></button>
+                <button class="deleteButton"><img src="/image/delete.png" alt=""></button>
+            </td>
+        </tr>
+    </table>
+</div>
+<!-- Update Modal -->
+<div id="passwordModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <span class="close" id="update-close">&times;</span>
+            <h2>Update Password</h2>
+        </div>
+        <div class="modal-body">
+            <form id="updateForm" method="post">
+                <input type="hidden" id="modal-type">
+                <input type="hidden" id="modal-username">
+                <div class="form-group">
+                    <label for="modal-password">Enter new password</label>
+                    <input type="password" id="modal-password" maxlength="20" placeholder="Enter new password">
+                </div>
+                <div class="form-group">
+                    <label for="show-password"></label><input type="checkbox" id="show-password"> Show Password
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn" onclick="document.getElementById('passwordModal').style.display='none'">
+                Close
+            </button>
+            <button type="button" class="btn btn-primary" onclick="submitPasswordUpdate()">Submit</button>
+        </div>
+    </div>
+</div>
+
+<!-- Create Modal -->
+<div id="createModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <span class="close" id="create-close">&times;</span>
+            <h2>Create Password</h2>
+        </div>
+        <div class="modal-body">
+            <form id="createForm">
+                <div class="form-group">
+                    <label for="modal-create-environment">Environment</label>
+                    <div id="modal-create-environment" style="padding: 0 30px 0 30px">
+                        <div style="display: flex">
+                            <input type="radio" id="dev-radio" name="environment" value="dev">
+                            <label for="dev-radio" style="padding-top: 10px">Dev</label>
+                        </div>
+                        <div style="display: flex">
+                            <input type="radio" id="stg-radio" name="environment" value="stg">
+                            <label for="stg-radio" style="padding-top: 10px">Stg</label>
+                        </div>
+                        <div style="display: flex">
+                            <input type="radio" id="prod-radio" name="environment" value="prod">
+                            <label for="prod-radio" style="padding-top: 10px">Prod</label>
+                        </div>
+                        <div style="display: flex">
+                            <input type="radio" id="common-radio" name="environment" value="common">
+                            <label for="common-radio" style="padding-top: 10px">Common</label>
+                        </div>
+                    </div>
+                    <label for="modal-create-type">Type</label>
+                    <input type="text" id="modal-create-type" maxlength="20" style="padding-bottom: 10px"
+                           placeholder="example: bas,semp,portal..">
+                    <label for="modal-create-username">Username</label>
+                    <input type="text" id="modal-create-username" maxlength="20" style="padding-bottom: 10px"
+                           placeholder="Enter new username">
+                    <label for="modal-create-password">Password</label>
+                    <input type="password" id="modal-create-password" maxlength="20" placeholder="Enter new password">
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn" onclick="document.getElementById('createModal').style.display='none'">
+                Close
+            </button>
+            <button type="button" class="btn btn-primary" onclick="submitPasswordCreate()">Submit</button>
+        </div>
+    </div>
+</div>
+<!-- Delete Modal -->
+<div id="deleteModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <span class="close" id="delete-close">&times;</span>
+            <h2>Delete Password</h2>
+        </div>
+        <div class="modal-body">
+            <form id="deleteForm">
+                <input type="hidden" id="modal-delete-type">
+                <input type="hidden" id="modal-delete-username">
+                <div class="form-group">
+                    <label for="modal-password">Do you want to delete this password</label>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn" onclick="document.getElementById('deleteModal').style.display='none'">
+                Close
+            </button>
+            <button type="button" class="btn btn-primary" onclick="submitPasswordDelete()">Submit</button>
+        </div>
+    </div>
+</div>
+<script th:src="@{/script.js}"></script>
+</body>
+</html>

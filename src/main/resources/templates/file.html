@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{/file.css}">
+    <title>Local File Private</title>
+</head>
+<body>
+<div class="container">
+    <h1>Local file transfer</h1>
+
+    <form action="/file/send" enctype="multipart/form-data" method="post" class="input-file">
+        <input type="file" name="file" required>
+        <button type="submit">Store</button>
+    </form>
+
+
+    <table class="list">
+        <tr th:each="file : ${files}">
+            <td width="80%"><span th:text="${file}"></span></td>
+            <td width="20%" class="icon">
+                <form action="/file/download" method="get" style="display: inline; margin-right: 10px">
+                    <input type="hidden" th:value="${file}" name="filename">
+                    <button type="submit"><img src="/image/download.png" alt=""></button>
+                </form>
+
+                <form action="/file/delete" method="post" style="display: inline">
+                    <input type="hidden" th:value="${file}" name="filename">
+                    <button type="submit"><img src="/image/delete-logo.png" alt=""></button>
+                </form>
+            </td>
+        </tr>
+    </table>
+
+
+</div>
+</body>
+</html>
