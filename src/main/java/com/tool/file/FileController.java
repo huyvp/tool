@@ -1,5 +1,6 @@
 package com.tool.file;
 
+import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.core.io.FileSystemResource;
 import org.springframework.core.io.Resource;
 import org.springframework.http.HttpHeaders;
@@ -26,6 +27,7 @@ import java.util.List;
 @RequestMapping("/file")
 public class FileController {
     private final static String DIRECTORY = "uploads";
+    private final static String MY_IP = "107.120.121.97";
 
     @PostMapping("/save")
     @ResponseBody
@@ -37,7 +39,8 @@ public class FileController {
     }
 
     @GetMapping(value = "")
-    public String getFiles(Model model) throws IOException {
+    public String getFiles(Model model, HttpServletRequest request) throws IOException {
+
         Path uploadDir = Paths.get(DIRECTORY);
         if (!Files.exists(uploadDir)) {
             Files.createDirectories(uploadDir);
@@ -51,6 +54,8 @@ public class FileController {
         } else {
             filenames = new ArrayList<>(1);
         }
+
+        model.addAttribute("admin", MY_IP.equals(request.getRemoteAddr()));
         model.addAttribute("files", filenames);
         return "file";
     }

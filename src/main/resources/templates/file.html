@@ -9,11 +9,14 @@
 <div class="container">
     <h1>Local file transfer</h1>
 
-    <form action="/file/send" enctype="multipart/form-data" method="post" class="input-file">
-        <input type="file" name="file" required>
+    <form id="fileForm" action="/file/save" enctype="multipart/form-data" method="post" class="input-file">
+        <input type="file" name="file" required multiple>
         <button type="submit">Store</button>
     </form>
 
+    <div id="progressBarContainer">
+        <div id="progressBar"></div>
+    </div>
 
     <table class="list">
         <tr th:each="file : ${files}">
@@ -24,7 +27,7 @@
                     <button type="submit"><img src="/image/download.png" alt=""></button>
                 </form>
 
-                <form action="/file/delete" method="post" style="display: inline">
+                <form action="/file/delete" method="post" style="display: inline" >
                     <input type="hidden" th:value="${file}" name="filename">
                     <button type="submit"><img src="/image/delete-logo.png" alt=""></button>
                 </form>
@@ -35,4 +38,34 @@
 
 </div>
 </body>
+<script>
+    document.getElementById('fileForm').addEventListener('submit', function (e) {
+        e.preventDefault();
+        const form = e.target;
+        const formData = new FormData(form);
+
+        const xhr = new XMLHttpRequest();
+        xhr.open("POST", form.action, true);
+
+        document.getElementById('progressBarContainer').style.display = 'block';
+
+
+        xhr.upload.onprogress = function (event) {
+            if (event.lengthComputable) {
+                const percentComplete = (event.loaded / event.total) * 100;
+                document.getElementById('progressBar').style.width = percentComplete + '%';
+            }
+        };
+
+        xhr.onload = function () {
+            if (xhr.status === 200) {
+                document.getElementById('progressBarContainer').style.display = 'none';
+                document.getElementById('progressBar').style.width = '0%';
+                window.location.reload();
+            }
+        };
+
+        xhr.send(formData);
+    });
+</script>
 </html>

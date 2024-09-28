@@ -1,0 +1,618 @@
+2024-09-26T20:36:17.366+07:00  INFO 16740 --- [Tool] [main] com.tool.MicroToolApplication            : Starting MicroToolApplication using Java 17.0.12 with PID 16740 (D:\project\micro_tool\target\classes started by huyvp in D:\project\micro_tool)
+2024-09-26T20:36:17.368+07:00  INFO 16740 --- [Tool] [main] com.tool.MicroToolApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-09-26T20:36:18.154+07:00  INFO 16740 --- [Tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8088 (http)
+2024-09-26T20:36:18.164+07:00  INFO 16740 --- [Tool] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-26T20:36:18.164+07:00  INFO 16740 --- [Tool] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-26T20:36:18.212+07:00  INFO 16740 --- [Tool] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-26T20:36:18.212+07:00  INFO 16740 --- [Tool] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 816 ms
+2024-09-26T20:36:18.647+07:00  INFO 16740 --- [Tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8088 (http) with context path '/'
+2024-09-26T20:36:18.654+07:00  INFO 16740 --- [Tool] [main] com.tool.MicroToolApplication            : Started MicroToolApplication in 1.595 seconds (process running for 2.44)
+2024-09-26T20:36:27.725+07:00  INFO 16740 --- [Tool] [http-nio-8088-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-26T20:36:27.726+07:00  INFO 16740 --- [Tool] [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-26T20:36:27.726+07:00  INFO 16740 --- [Tool] [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-09-26T20:49:46.366+07:00  INFO 5832 --- [Tool] [main] com.tool.MicroToolApplication            : Starting MicroToolApplication using Java 17.0.12 with PID 5832 (D:\project\micro_tool\target\classes started by huyvp in D:\project\micro_tool)
+2024-09-26T20:49:46.368+07:00  INFO 5832 --- [Tool] [main] com.tool.MicroToolApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-09-26T20:49:47.040+07:00  INFO 5832 --- [Tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8088 (http)
+2024-09-26T20:49:47.048+07:00  INFO 5832 --- [Tool] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-26T20:49:47.048+07:00  INFO 5832 --- [Tool] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-26T20:49:47.088+07:00  INFO 5832 --- [Tool] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-26T20:49:47.089+07:00  INFO 5832 --- [Tool] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 694 ms
+2024-09-26T20:49:47.470+07:00  INFO 5832 --- [Tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8088 (http) with context path '/'
+2024-09-26T20:49:47.477+07:00  INFO 5832 --- [Tool] [main] com.tool.MicroToolApplication            : Started MicroToolApplication in 1.532 seconds (process running for 2.043)
+2024-09-26T20:49:56.352+07:00  INFO 5832 --- [Tool] [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-26T20:49:56.352+07:00  INFO 5832 --- [Tool] [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-26T20:49:56.353+07:00  INFO 5832 --- [Tool] [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-09-26T20:50:46.404+07:00  INFO 16980 --- [Tool] [main] com.tool.MicroToolApplication            : Starting MicroToolApplication using Java 17.0.12 with PID 16980 (D:\project\micro_tool\target\classes started by huyvp in D:\project\micro_tool)
+2024-09-26T20:50:46.406+07:00  INFO 16980 --- [Tool] [main] com.tool.MicroToolApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-09-26T20:50:47.076+07:00  INFO 16980 --- [Tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8088 (http)
+2024-09-26T20:50:47.084+07:00  INFO 16980 --- [Tool] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-26T20:50:47.084+07:00  INFO 16980 --- [Tool] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-26T20:50:47.127+07:00  INFO 16980 --- [Tool] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-26T20:50:47.127+07:00  INFO 16980 --- [Tool] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 696 ms
+2024-09-26T20:50:47.501+07:00  INFO 16980 --- [Tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8088 (http) with context path '/'
+2024-09-26T20:50:47.508+07:00  INFO 16980 --- [Tool] [main] com.tool.MicroToolApplication            : Started MicroToolApplication in 1.42 seconds (process running for 1.875)
+2024-09-26T20:50:58.777+07:00  INFO 16980 --- [Tool] [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-26T20:50:58.778+07:00  INFO 16980 --- [Tool] [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-26T20:50:58.779+07:00  INFO 16980 --- [Tool] [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-09-26T21:00:55.866+07:00  INFO 17952 --- [Tool] [main] com.tool.MicroToolApplication            : Starting MicroToolApplication using Java 17.0.12 with PID 17952 (D:\project\micro_tool\target\classes started by huyvp in D:\project\micro_tool)
+2024-09-26T21:00:55.867+07:00  INFO 17952 --- [Tool] [main] com.tool.MicroToolApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-09-26T21:00:56.510+07:00  INFO 17952 --- [Tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8088 (http)
+2024-09-26T21:00:56.518+07:00  INFO 17952 --- [Tool] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-26T21:00:56.518+07:00  INFO 17952 --- [Tool] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-26T21:00:56.564+07:00  INFO 17952 --- [Tool] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-26T21:00:56.564+07:00  INFO 17952 --- [Tool] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 671 ms
+2024-09-26T21:00:56.953+07:00  INFO 17952 --- [Tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8088 (http) with context path '/'
+2024-09-26T21:00:56.960+07:00  INFO 17952 --- [Tool] [main] com.tool.MicroToolApplication            : Started MicroToolApplication in 1.382 seconds (process running for 1.869)
+2024-09-26T21:01:30.343+07:00  INFO 17952 --- [Tool] [http-nio-8088-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-26T21:01:30.343+07:00  INFO 17952 --- [Tool] [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-26T21:01:30.344+07:00  INFO 17952 --- [Tool] [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-09-26T21:03:52.670+07:00  INFO 18248 --- [Tool] [main] com.tool.MicroToolApplication            : Starting MicroToolApplication using Java 17.0.12 with PID 18248 (D:\project\micro_tool\target\classes started by huyvp in D:\project\micro_tool)
+2024-09-26T21:03:52.672+07:00  INFO 18248 --- [Tool] [main] com.tool.MicroToolApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-09-26T21:03:53.316+07:00  INFO 18248 --- [Tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8088 (http)
+2024-09-26T21:03:53.324+07:00  INFO 18248 --- [Tool] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-26T21:03:53.324+07:00  INFO 18248 --- [Tool] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-26T21:03:53.364+07:00  INFO 18248 --- [Tool] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-26T21:03:53.364+07:00  INFO 18248 --- [Tool] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 667 ms
+2024-09-26T21:03:53.731+07:00  INFO 18248 --- [Tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8088 (http) with context path '/'
+2024-09-26T21:03:53.737+07:00  INFO 18248 --- [Tool] [main] com.tool.MicroToolApplication            : Started MicroToolApplication in 1.361 seconds (process running for 1.808)
+2024-09-26T21:04:02.217+07:00  INFO 18248 --- [Tool] [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-26T21:04:02.218+07:00  INFO 18248 --- [Tool] [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-26T21:04:02.218+07:00  INFO 18248 --- [Tool] [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-09-26T21:05:19.327+07:00  INFO 4856 --- [Tool] [main] com.tool.MicroToolApplication            : Starting MicroToolApplication using Java 17.0.12 with PID 4856 (D:\project\micro_tool\target\classes started by huyvp in D:\project\micro_tool)
+2024-09-26T21:05:19.328+07:00  INFO 4856 --- [Tool] [main] com.tool.MicroToolApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-09-26T21:05:19.995+07:00  INFO 4856 --- [Tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8088 (http)
+2024-09-26T21:05:20.004+07:00  INFO 4856 --- [Tool] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-26T21:05:20.004+07:00  INFO 4856 --- [Tool] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-26T21:05:20.043+07:00  INFO 4856 --- [Tool] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-26T21:05:20.044+07:00  INFO 4856 --- [Tool] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 686 ms
+2024-09-26T21:05:20.412+07:00  INFO 4856 --- [Tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8088 (http) with context path '/'
+2024-09-26T21:05:20.419+07:00  INFO 4856 --- [Tool] [main] com.tool.MicroToolApplication            : Started MicroToolApplication in 1.419 seconds (process running for 1.853)
+2024-09-26T21:05:22.503+07:00  INFO 4856 --- [Tool] [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-26T21:05:22.503+07:00  INFO 4856 --- [Tool] [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-26T21:05:22.504+07:00  INFO 4856 --- [Tool] [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-09-26T21:12:56.329+07:00  INFO 13132 --- [Tool] [main] com.tool.MicroToolApplication            : Starting MicroToolApplication using Java 17.0.12 with PID 13132 (D:\project\micro_tool\target\classes started by huyvp in D:\project\micro_tool)
+2024-09-26T21:12:56.330+07:00  INFO 13132 --- [Tool] [main] com.tool.MicroToolApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-09-26T21:12:56.980+07:00  INFO 13132 --- [Tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8088 (http)
+2024-09-26T21:12:56.988+07:00  INFO 13132 --- [Tool] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-26T21:12:56.988+07:00  INFO 13132 --- [Tool] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-26T21:12:57.029+07:00  INFO 13132 --- [Tool] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-26T21:12:57.029+07:00  INFO 13132 --- [Tool] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 674 ms
+2024-09-26T21:12:57.410+07:00  INFO 13132 --- [Tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8088 (http) with context path '/'
+2024-09-26T21:12:57.417+07:00  INFO 13132 --- [Tool] [main] com.tool.MicroToolApplication            : Started MicroToolApplication in 1.387 seconds (process running for 1.812)
+2024-09-26T21:13:00.088+07:00  INFO 13132 --- [Tool] [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-26T21:13:00.088+07:00  INFO 13132 --- [Tool] [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-26T21:13:00.089+07:00  INFO 13132 --- [Tool] [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-09-26T21:15:51.960+07:00  INFO 17240 --- [Tool] [main] com.tool.MicroToolApplication            : Starting MicroToolApplication using Java 17.0.12 with PID 17240 (D:\project\micro_tool\target\classes started by huyvp in D:\project\micro_tool)
+2024-09-26T21:15:51.962+07:00  INFO 17240 --- [Tool] [main] com.tool.MicroToolApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-09-26T21:15:52.626+07:00  INFO 17240 --- [Tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8088 (http)
+2024-09-26T21:15:52.634+07:00  INFO 17240 --- [Tool] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-26T21:15:52.634+07:00  INFO 17240 --- [Tool] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-26T21:15:52.687+07:00  INFO 17240 --- [Tool] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-26T21:15:52.687+07:00  INFO 17240 --- [Tool] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 700 ms
+2024-09-26T21:15:53.058+07:00  INFO 17240 --- [Tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8088 (http) with context path '/'
+2024-09-26T21:15:53.064+07:00  INFO 17240 --- [Tool] [main] com.tool.MicroToolApplication            : Started MicroToolApplication in 1.44 seconds (process running for 1.879)
+2024-09-26T21:15:57.466+07:00  INFO 17240 --- [Tool] [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-26T21:15:57.466+07:00  INFO 17240 --- [Tool] [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-26T21:15:57.467+07:00  INFO 17240 --- [Tool] [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-09-26T21:20:16.554+07:00  INFO 16236 --- [Tool] [main] com.tool.MicroToolApplication            : Starting MicroToolApplication using Java 17.0.12 with PID 16236 (D:\project\micro_tool\target\classes started by huyvp in D:\project\micro_tool)
+2024-09-26T21:20:16.555+07:00  INFO 16236 --- [Tool] [main] com.tool.MicroToolApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-09-26T21:20:17.198+07:00  INFO 16236 --- [Tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8088 (http)
+2024-09-26T21:20:17.206+07:00  INFO 16236 --- [Tool] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-26T21:20:17.206+07:00  INFO 16236 --- [Tool] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-26T21:20:17.252+07:00  INFO 16236 --- [Tool] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-26T21:20:17.252+07:00  INFO 16236 --- [Tool] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 671 ms
+2024-09-26T21:20:17.613+07:00  INFO 16236 --- [Tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8088 (http) with context path '/'
+2024-09-26T21:20:17.620+07:00  INFO 16236 --- [Tool] [main] com.tool.MicroToolApplication            : Started MicroToolApplication in 1.368 seconds (process running for 1.87)
+2024-09-26T21:20:18.847+07:00  INFO 16236 --- [Tool] [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-26T21:20:18.848+07:00  INFO 16236 --- [Tool] [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-26T21:20:18.848+07:00  INFO 16236 --- [Tool] [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-09-26T21:25:15.505+07:00  INFO 2480 --- [Tool] [main] com.tool.MicroToolApplication            : Starting MicroToolApplication using Java 17.0.12 with PID 2480 (D:\project\micro_tool\target\classes started by huyvp in D:\project\micro_tool)
+2024-09-26T21:25:15.507+07:00  INFO 2480 --- [Tool] [main] com.tool.MicroToolApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-09-26T21:25:16.148+07:00  INFO 2480 --- [Tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8088 (http)
+2024-09-26T21:25:16.155+07:00  INFO 2480 --- [Tool] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-26T21:25:16.155+07:00  INFO 2480 --- [Tool] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-26T21:25:16.203+07:00  INFO 2480 --- [Tool] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-26T21:25:16.203+07:00  INFO 2480 --- [Tool] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 671 ms
+2024-09-26T21:25:16.568+07:00  INFO 2480 --- [Tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8088 (http) with context path '/'
+2024-09-26T21:25:16.575+07:00  INFO 2480 --- [Tool] [main] com.tool.MicroToolApplication            : Started MicroToolApplication in 1.382 seconds (process running for 1.878)
+2024-09-26T21:25:23.118+07:00  INFO 2480 --- [Tool] [http-nio-8088-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-26T21:25:23.119+07:00  INFO 2480 --- [Tool] [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-26T21:25:23.119+07:00  INFO 2480 --- [Tool] [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-09-26T22:35:54.020+07:00  INFO 8816 --- [Tool] [main] com.tool.MicroToolApplication            : Starting MicroToolApplication using Java 17.0.12 with PID 8816 (D:\project\micro_tool\target\classes started by huyvp in D:\project\micro_tool)
+2024-09-26T22:35:54.021+07:00  INFO 8816 --- [Tool] [main] com.tool.MicroToolApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-09-26T22:35:54.699+07:00  INFO 8816 --- [Tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8088 (http)
+2024-09-26T22:35:54.708+07:00  INFO 8816 --- [Tool] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-26T22:35:54.708+07:00  INFO 8816 --- [Tool] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-26T22:35:54.750+07:00  INFO 8816 --- [Tool] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-26T22:35:54.750+07:00  INFO 8816 --- [Tool] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 703 ms
+2024-09-26T22:35:55.121+07:00  INFO 8816 --- [Tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8088 (http) with context path '/'
+2024-09-26T22:35:55.128+07:00  INFO 8816 --- [Tool] [main] com.tool.MicroToolApplication            : Started MicroToolApplication in 1.41 seconds (process running for 1.86)
+2024-09-26T22:36:03.822+07:00  INFO 8816 --- [Tool] [http-nio-8088-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-26T22:36:03.822+07:00  INFO 8816 --- [Tool] [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-26T22:36:03.823+07:00  INFO 8816 --- [Tool] [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-09-26T22:38:25.377+07:00  INFO 8836 --- [Tool] [main] com.tool.MicroToolApplication            : Starting MicroToolApplication using Java 17.0.12 with PID 8836 (D:\project\micro_tool\target\classes started by huyvp in D:\project\micro_tool)
+2024-09-26T22:38:25.379+07:00  INFO 8836 --- [Tool] [main] com.tool.MicroToolApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-09-26T22:38:26.053+07:00  INFO 8836 --- [Tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8088 (http)
+2024-09-26T22:38:26.061+07:00  INFO 8836 --- [Tool] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-26T22:38:26.061+07:00  INFO 8836 --- [Tool] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-26T22:38:26.106+07:00  INFO 8836 --- [Tool] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-26T22:38:26.107+07:00  INFO 8836 --- [Tool] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 702 ms
+2024-09-26T22:38:26.469+07:00  INFO 8836 --- [Tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8088 (http) with context path '/'
+2024-09-26T22:38:26.476+07:00  INFO 8836 --- [Tool] [main] com.tool.MicroToolApplication            : Started MicroToolApplication in 1.4 seconds (process running for 1.867)
+2024-09-26T22:38:51.667+07:00  INFO 8836 --- [Tool] [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-26T22:38:51.668+07:00  INFO 8836 --- [Tool] [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-26T22:38:51.668+07:00  INFO 8836 --- [Tool] [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-09-26T22:42:36.828+07:00  INFO 11932 --- [Tool] [main] com.tool.MicroToolApplication            : Starting MicroToolApplication using Java 17.0.12 with PID 11932 (D:\project\micro_tool\target\classes started by huyvp in D:\project\micro_tool)
+2024-09-26T22:42:36.829+07:00  INFO 11932 --- [Tool] [main] com.tool.MicroToolApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-09-26T22:42:37.480+07:00  INFO 11932 --- [Tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8088 (http)
+2024-09-26T22:42:37.488+07:00  INFO 11932 --- [Tool] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-26T22:42:37.488+07:00  INFO 11932 --- [Tool] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-26T22:42:37.528+07:00  INFO 11932 --- [Tool] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-26T22:42:37.528+07:00  INFO 11932 --- [Tool] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 675 ms
+2024-09-26T22:42:37.902+07:00  INFO 11932 --- [Tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8088 (http) with context path '/'
+2024-09-26T22:42:37.908+07:00  INFO 11932 --- [Tool] [main] com.tool.MicroToolApplication            : Started MicroToolApplication in 1.378 seconds (process running for 1.811)
+2024-09-26T22:46:15.086+07:00  INFO 11932 --- [Tool] [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-26T22:46:15.087+07:00  INFO 11932 --- [Tool] [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-26T22:46:15.088+07:00  INFO 11932 --- [Tool] [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-09-26T22:48:20.102+07:00  INFO 13300 --- [Tool] [main] com.tool.MicroToolApplication            : Starting MicroToolApplication using Java 17.0.12 with PID 13300 (D:\project\micro_tool\target\classes started by huyvp in D:\project\micro_tool)
+2024-09-26T22:48:20.104+07:00  INFO 13300 --- [Tool] [main] com.tool.MicroToolApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-09-26T22:48:20.758+07:00  INFO 13300 --- [Tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8088 (http)
+2024-09-26T22:48:20.771+07:00  INFO 13300 --- [Tool] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-26T22:48:20.771+07:00  INFO 13300 --- [Tool] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-26T22:48:20.810+07:00  INFO 13300 --- [Tool] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-26T22:48:20.811+07:00  INFO 13300 --- [Tool] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 681 ms
+2024-09-26T22:48:21.166+07:00  INFO 13300 --- [Tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8088 (http) with context path '/'
+2024-09-26T22:48:21.173+07:00  INFO 13300 --- [Tool] [main] com.tool.MicroToolApplication            : Started MicroToolApplication in 1.37 seconds (process running for 1.858)
+2024-09-26T22:48:45.121+07:00  INFO 13300 --- [Tool] [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-26T22:48:45.121+07:00  INFO 13300 --- [Tool] [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-26T22:48:45.121+07:00  INFO 13300 --- [Tool] [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-09-26T22:50:07.380+07:00  INFO 6408 --- [Tool] [main] com.tool.MicroToolApplication            : Starting MicroToolApplication using Java 17.0.12 with PID 6408 (D:\project\micro_tool\target\classes started by huyvp in D:\project\micro_tool)
+2024-09-26T22:50:07.381+07:00  INFO 6408 --- [Tool] [main] com.tool.MicroToolApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-09-26T22:50:08.057+07:00  INFO 6408 --- [Tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8088 (http)
+2024-09-26T22:50:08.065+07:00  INFO 6408 --- [Tool] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-26T22:50:08.066+07:00  INFO 6408 --- [Tool] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-26T22:50:08.107+07:00  INFO 6408 --- [Tool] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-26T22:50:08.108+07:00  INFO 6408 --- [Tool] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 700 ms
+2024-09-26T22:50:08.481+07:00  INFO 6408 --- [Tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8088 (http) with context path '/'
+2024-09-26T22:50:08.488+07:00  INFO 6408 --- [Tool] [main] com.tool.MicroToolApplication            : Started MicroToolApplication in 1.406 seconds (process running for 1.884)
+2024-09-26T22:50:20.338+07:00  INFO 6408 --- [Tool] [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-26T22:50:20.338+07:00  INFO 6408 --- [Tool] [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-26T22:50:20.338+07:00  INFO 6408 --- [Tool] [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-09-26T22:52:23.918+07:00  INFO 7608 --- [Tool] [main] com.tool.MicroToolApplication            : Starting MicroToolApplication using Java 17.0.12 with PID 7608 (D:\project\micro_tool\target\classes started by huyvp in D:\project\micro_tool)
+2024-09-26T22:52:23.920+07:00  INFO 7608 --- [Tool] [main] com.tool.MicroToolApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-09-26T22:52:24.587+07:00  INFO 7608 --- [Tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8088 (http)
+2024-09-26T22:52:24.595+07:00  INFO 7608 --- [Tool] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-26T22:52:24.595+07:00  INFO 7608 --- [Tool] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-26T22:52:24.636+07:00  INFO 7608 --- [Tool] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-26T22:52:24.636+07:00  INFO 7608 --- [Tool] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 690 ms
+2024-09-26T22:52:25.001+07:00  INFO 7608 --- [Tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8088 (http) with context path '/'
+2024-09-26T22:52:25.007+07:00  INFO 7608 --- [Tool] [main] com.tool.MicroToolApplication            : Started MicroToolApplication in 1.394 seconds (process running for 1.89)
+2024-09-26T22:52:31.607+07:00  INFO 7608 --- [Tool] [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-26T22:52:31.607+07:00  INFO 7608 --- [Tool] [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-26T22:52:31.607+07:00  INFO 7608 --- [Tool] [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-09-26T23:01:22.687+07:00  INFO 3260 --- [Tool] [main] com.tool.MicroToolApplication            : Starting MicroToolApplication using Java 17.0.12 with PID 3260 (D:\project\micro_tool\target\classes started by huyvp in D:\project\micro_tool)
+2024-09-26T23:01:22.689+07:00  INFO 3260 --- [Tool] [main] com.tool.MicroToolApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-09-26T23:01:23.332+07:00  INFO 3260 --- [Tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8088 (http)
+2024-09-26T23:01:23.345+07:00  INFO 3260 --- [Tool] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-26T23:01:23.345+07:00  INFO 3260 --- [Tool] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-26T23:01:23.384+07:00  INFO 3260 --- [Tool] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-26T23:01:23.385+07:00  INFO 3260 --- [Tool] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 670 ms
+2024-09-26T23:01:23.746+07:00  INFO 3260 --- [Tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8088 (http) with context path '/'
+2024-09-26T23:01:23.752+07:00  INFO 3260 --- [Tool] [main] com.tool.MicroToolApplication            : Started MicroToolApplication in 1.353 seconds (process running for 1.814)
+2024-09-26T23:01:39.904+07:00  INFO 3260 --- [Tool] [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-26T23:01:39.904+07:00  INFO 3260 --- [Tool] [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-26T23:01:39.905+07:00  INFO 3260 --- [Tool] [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-09-26T23:01:40.039+07:00 ERROR 3260 --- [Tool] [http-nio-8088-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8088-exec-1] Exception processing template "file": An error happened during template parsing (template: "class path resource [templates/file.html]" - line 30, col 17)
+
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/file.html]" - line 30, col 17)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:239) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:649) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372) ~[thymeleaf-spring6-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192) ~[thymeleaf-spring6-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1432) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.28.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.28.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+Caused by: org.attoparser.ParseException: (Line = 30, Column = 17) Incomplete structure: "<form action="/file/delete" method="post" style="display: inline" th:if="${admin}>
+                    <input type="hidden" th:value="${file}" name="filename">
+                    <button type="submit"><img src="/image/delete-logo.png" alt=""></button>
+                </form>
+            </td>
+        </tr>
+    </table>
+
+
+</div>
+</body>
+<script>
+    document.getElementById('fileForm').addEventListener('submit', function (e) {
+        e.preventDefault();
+        const form = e.target;
+        const formData = new FormData(form);
+
+        const xhr = new XMLHttpRequest();
+        xhr.open("POST", form.action, true);
+
+        document.getElementById('progressBarContainer').style.display = 'block';
+
+
+        xhr.upload.onprogress = function (event) {
+            if (event.lengthComputable) {
+                const percentComplete = (event.loaded / event.total) * 100;
+                document.getElementById('progressBar').style.width = percentComplete + '%';
+            }
+        };
+
+        xhr.onload = function () {
+            if (xhr.status === 200) {
+                document.getElementById('progressBarContainer').style.display = 'none';
+                document.getElementById('progressBar').style.width = '0%';
+                window.location.reload();
+            }
+        };
+
+        xhr.send(formData);
+    });
+</script>
+</html>"
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:366) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	... 48 common frames omitted
+
+2024-09-26T23:01:40.049+07:00 ERROR 3260 --- [Tool] [http-nio-8088-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/file.html]" - line 30, col 17)] with root cause
+
+org.attoparser.ParseException: (Line = 30, Column = 17) Incomplete structure: "<form action="/file/delete" method="post" style="display: inline" th:if="${admin}>
+                    <input type="hidden" th:value="${file}" name="filename">
+                    <button type="submit"><img src="/image/delete-logo.png" alt=""></button>
+                </form>
+            </td>
+        </tr>
+    </table>
+
+
+</div>
+</body>
+<script>
+    document.getElementById('fileForm').addEventListener('submit', function (e) {
+        e.preventDefault();
+        const form = e.target;
+        const formData = new FormData(form);
+
+        const xhr = new XMLHttpRequest();
+        xhr.open("POST", form.action, true);
+
+        document.getElementById('progressBarContainer').style.display = 'block';
+
+
+        xhr.upload.onprogress = function (event) {
+            if (event.lengthComputable) {
+                const percentComplete = (event.loaded / event.total) * 100;
+                document.getElementById('progressBar').style.width = percentComplete + '%';
+            }
+        };
+
+        xhr.onload = function () {
+            if (xhr.status === 200) {
+                document.getElementById('progressBarContainer').style.display = 'none';
+                document.getElementById('progressBar').style.width = '0%';
+                window.location.reload();
+            }
+        };
+
+        xhr.send(formData);
+    });
+</script>
+</html>"
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:366) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:649) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372) ~[thymeleaf-spring6-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192) ~[thymeleaf-spring6-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1432) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.28.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.28.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
+2024-09-26T23:01:42.308+07:00 ERROR 3260 --- [Tool] [http-nio-8088-exec-5] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8088-exec-5] Exception processing template "file": An error happened during template parsing (template: "class path resource [templates/file.html]" - line 30, col 17)
+
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/file.html]" - line 30, col 17)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:239) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:649) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372) ~[thymeleaf-spring6-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192) ~[thymeleaf-spring6-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1432) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.28.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.28.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+Caused by: org.attoparser.ParseException: (Line = 30, Column = 17) Incomplete structure: "<form action="/file/delete" method="post" style="display: inline" th:if="${admin}>
+                    <input type="hidden" th:value="${file}" name="filename">
+                    <button type="submit"><img src="/image/delete-logo.png" alt=""></button>
+                </form>
+            </td>
+        </tr>
+    </table>
+
+
+</div>
+</body>
+<script>
+    document.getElementById('fileForm').addEventListener('submit', function (e) {
+        e.preventDefault();
+        const form = e.target;
+        const formData = new FormData(form);
+
+        const xhr = new XMLHttpRequest();
+        xhr.open("POST", form.action, true);
+
+        document.getElementById('progressBarContainer').style.display = 'block';
+
+
+        xhr.upload.onprogress = function (event) {
+            if (event.lengthComputable) {
+                const percentComplete = (event.loaded / event.total) * 100;
+                document.getElementById('progressBar').style.width = percentComplete + '%';
+            }
+        };
+
+        xhr.onload = function () {
+            if (xhr.status === 200) {
+                document.getElementById('progressBarContainer').style.display = 'none';
+                document.getElementById('progressBar').style.width = '0%';
+                window.location.reload();
+            }
+        };
+
+        xhr.send(formData);
+    });
+</script>
+</html>"
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:366) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	... 48 common frames omitted
+
+2024-09-26T23:01:42.309+07:00 ERROR 3260 --- [Tool] [http-nio-8088-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/file.html]" - line 30, col 17)] with root cause
+
+org.attoparser.ParseException: (Line = 30, Column = 17) Incomplete structure: "<form action="/file/delete" method="post" style="display: inline" th:if="${admin}>
+                    <input type="hidden" th:value="${file}" name="filename">
+                    <button type="submit"><img src="/image/delete-logo.png" alt=""></button>
+                </form>
+            </td>
+        </tr>
+    </table>
+
+
+</div>
+</body>
+<script>
+    document.getElementById('fileForm').addEventListener('submit', function (e) {
+        e.preventDefault();
+        const form = e.target;
+        const formData = new FormData(form);
+
+        const xhr = new XMLHttpRequest();
+        xhr.open("POST", form.action, true);
+
+        document.getElementById('progressBarContainer').style.display = 'block';
+
+
+        xhr.upload.onprogress = function (event) {
+            if (event.lengthComputable) {
+                const percentComplete = (event.loaded / event.total) * 100;
+                document.getElementById('progressBar').style.width = percentComplete + '%';
+            }
+        };
+
+        xhr.onload = function () {
+            if (xhr.status === 200) {
+                document.getElementById('progressBarContainer').style.display = 'none';
+                document.getElementById('progressBar').style.width = '0%';
+                window.location.reload();
+            }
+        };
+
+        xhr.send(formData);
+    });
+</script>
+</html>"
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:366) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:649) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372) ~[thymeleaf-spring6-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192) ~[thymeleaf-spring6-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1432) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.28.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.28.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
+2024-09-26T23:03:52.496+07:00  INFO 13512 --- [Tool] [main] com.tool.MicroToolApplication            : Starting MicroToolApplication using Java 17.0.12 with PID 13512 (D:\project\micro_tool\target\classes started by huyvp in D:\project\micro_tool)
+2024-09-26T23:03:52.499+07:00  INFO 13512 --- [Tool] [main] com.tool.MicroToolApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-09-26T23:03:53.176+07:00  INFO 13512 --- [Tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8088 (http)
+2024-09-26T23:03:53.184+07:00  INFO 13512 --- [Tool] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-26T23:03:53.184+07:00  INFO 13512 --- [Tool] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-26T23:03:53.231+07:00  INFO 13512 --- [Tool] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-26T23:03:53.232+07:00  INFO 13512 --- [Tool] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 705 ms
+2024-09-26T23:03:53.607+07:00  INFO 13512 --- [Tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8088 (http) with context path '/'
+2024-09-26T23:03:53.613+07:00  INFO 13512 --- [Tool] [main] com.tool.MicroToolApplication            : Started MicroToolApplication in 1.418 seconds (process running for 1.888)
+2024-09-26T23:04:00.088+07:00  INFO 13512 --- [Tool] [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-26T23:04:00.088+07:00  INFO 13512 --- [Tool] [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-26T23:04:00.089+07:00  INFO 13512 --- [Tool] [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-09-26T23:06:48.928+07:00  INFO 16696 --- [Tool] [main] com.tool.MicroToolApplication            : Starting MicroToolApplication using Java 17.0.12 with PID 16696 (D:\project\micro_tool\target\classes started by huyvp in D:\project\micro_tool)
+2024-09-26T23:06:48.930+07:00  INFO 16696 --- [Tool] [main] com.tool.MicroToolApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-09-26T23:06:49.625+07:00  INFO 16696 --- [Tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8088 (http)
+2024-09-26T23:06:49.633+07:00  INFO 16696 --- [Tool] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-26T23:06:49.634+07:00  INFO 16696 --- [Tool] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-26T23:06:49.678+07:00  INFO 16696 --- [Tool] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-26T23:06:49.679+07:00  INFO 16696 --- [Tool] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 722 ms
+2024-09-26T23:06:50.065+07:00  INFO 16696 --- [Tool] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8088 (http) with context path '/'
+2024-09-26T23:06:50.072+07:00  INFO 16696 --- [Tool] [main] com.tool.MicroToolApplication            : Started MicroToolApplication in 1.474 seconds (process running for 1.958)
+2024-09-26T23:06:53.556+07:00  INFO 16696 --- [Tool] [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-26T23:06:53.557+07:00  INFO 16696 --- [Tool] [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-26T23:06:53.557+07:00  INFO 16696 --- [Tool] [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
