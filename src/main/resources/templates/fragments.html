@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="html_head(title)">
+    <meta charset="UTF-8">
+    <title th:text="${title}">M.Office Tool</title>
+    <link rel="stylesheet" th:href="@{/file.css}">
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body>
+<div th:fragment="footer">
+    <p> &copy; Copywriter @sds.moffice.com</p>
+</div>
+
+<div th:fragment="header(title)">
+        <span id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
+            <a href="/file">File transfer</a>
+            <a href="/accounts">Accounts</a>
+            <a href="/accounts/link">Links</a>
+            <a href="/logout">Logout</a>
+        </span>
+
+    <div class="header">
+        <span style="font-size:30px; cursor:pointer" onclick="openNav()">&#9776;</span>
+        <div th:text="${title}" style="margin-left: 30px; color: #333;font-size: 32px">
+            M.Office
+        </div>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "30%";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+</div>
+</body>
+</html>

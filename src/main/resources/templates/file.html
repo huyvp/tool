@@ -1,71 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" th:href="@{/file.css}">
-    <title>Local File Private</title>
-</head>
-<body>
-<div class="container">
-    <h1>Local file transfer</h1>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head th:replace="~{fragments.html :: html_head(title=${'Local file transfer'})}">
+        <title>Default</title>
+    </head>
+    <body>
+    <div th:replace="~{fragments.html :: header(title=${'Local file transfer'})}"></div>
 
-    <form id="fileForm" action="/file/save" enctype="multipart/form-data" method="post" class="input-file">
-        <input type="file" name="file" required multiple>
-        <button type="submit">Store</button>
-    </form>
+    <div class="container">
 
-    <div id="progressBarContainer">
-        <div id="progressBar"></div>
+        <form id="fileForm" action="/file/save" enctype="multipart/form-data" method="post" class="input-file">
+            <input type="file" name="file" required multiple>
+            <button type="submit">Store</button>
+        </form>
+
+        <div id="progressBarContainer">
+            <div id="progressBar"></div>
+        </div>
+
+        <table class="list">
+            <tr th:each="file : ${files}">
+                <td width="80%"><span th:text="${file}"></span></td>
+                <td width="20%" class="icon">
+                    <form action="/file/download" method="get" style="display: inline; margin-right: 10px">
+                        <input type="hidden" th:value="${file}" name="filename">
+                        <button type="submit"><img src="/image/download.png" alt=""></button>
+                    </form>
+
+                    <form th:if="${admin}" action="/file/delete" method="post" style="display: inline">
+                        <input type="hidden" th:value="${file}" name="filename">
+                        <button type="submit"><img src="/image/delete-logo.png" alt=""></button>
+                    </form>
+                </td>
+            </tr>
+        </table>
     </div>
-
-    <table class="list">
-        <tr th:each="file : ${files}">
-            <td width="80%"><span th:text="${file}"></span></td>
-            <td width="20%" class="icon">
-                <form action="/file/download" method="get" style="display: inline; margin-right: 10px">
-                    <input type="hidden" th:value="${file}" name="filename">
-                    <button type="submit"><img src="/image/download.png" alt=""></button>
-                </form>
-
-                <form action="/file/delete" method="post" style="display: inline" >
-                    <input type="hidden" th:value="${file}" name="filename">
-                    <button type="submit"><img src="/image/delete-logo.png" alt=""></button>
-                </form>
-            </td>
-        </tr>
-    </table>
-
-
-</div>
-</body>
-<script>
-    document.getElementById('fileForm').addEventListener('submit', function (e) {
-        e.preventDefault();
-        const form = e.target;
-        const formData = new FormData(form);
-
-        const xhr = new XMLHttpRequest();
-        xhr.open("POST", form.action, true);
-
-        document.getElementById('progressBarContainer').style.display = 'block';
-
-
-        xhr.upload.onprogress = function (event) {
-            if (event.lengthComputable) {
-                const percentComplete = (event.loaded / event.total) * 100;
-                document.getElementById('progressBar').style.width = percentComplete + '%';
-            }
-        };
-
-        xhr.onload = function () {
-            if (xhr.status === 200) {
-                document.getElementById('progressBarContainer').style.display = 'none';
-                document.getElementById('progressBar').style.width = '0%';
-                window.location.reload();
-            }
-        };
-
-        xhr.send(formData);
-    });
-</script>
+    <script>
+        document.getElementById('fileForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const form = e.target;
+            const formData = new FormData(form);
+            const xhr = new XMLHttpRequest();
+            xhr.open("POST", form.action, true);
+            document.getElementById('progressBarContainer').style.display = 'block';
+            xhr.upload.onprogress = function (event) {
+                if (event.lengthComputable) {
+                    const percentComplete = (event.loaded / event.total) * 100;
+                    document.getElementById('progressBar').style.width = percentComplete + '%';
+                }
+            };
+            xhr.onload = function () {
+                if (xhr.status === 200) {
+                    document.getElementById('progressBarContainer').style.display = 'none';
+                    document.getElementById('progressBar').style.width = '0%';
+                    window.location.reload();
+                }
+            };
+            xhr.send(formData);
+        });
+    </script>
+    </body>
 </html>
