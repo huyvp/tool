@@ -1,22 +1,30 @@
 spring:
   application:
-    name: Tool
+    name: Tool collection
   datasource:
     url: jdbc:postgresql://localhost:5432/tool
-    username: ${POSTGRES_USERNAME:postgres}
-    password: ${POSTGRES_PASSWORD:hh1122334455}
+    username: postgres
+    password: 123456
     driver-class-name: org.postgresql.Driver
   servlet:
     multipart:
       max-file-size: 1000GB
       max-request-size: 1000GB
       enabled: true
-mybatis:
-  configuration:
-    map-underscore-to-camel-case: true
-    default-statement-timeout: 30
+  thymeleaf:
+    cache: false
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+report:
+  jira:
+    token: "Bearer "
+
 logging:
-  file:
-    name: tool.log
-server:
-  port: 8088
+  level:
+    org.springframework.security: debug

@@ -1,62 +1,121 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-    <head th:replace="~{fragments.html :: html_head(title=${'Local file transfer'})}">
-        <title>Default</title>
-    </head>
-    <body>
-    <div th:replace="~{fragments.html :: header(title=${'Local file transfer'})}"></div>
+<head th:replace="~{fragments.html :: html_head(title=${'Local file transfer'})}"/>
+<body>
+<div id="main">
+    <div th:replace="~{fragments.html :: header(title=${'Local file transfer'}, tabs=${tabs})}"></div>
 
-    <div class="container">
+    <form id="fileForm" action="/file/save" enctype="multipart/form-data" method="post" class="form-container">
+        <div class="upload-files-container">
+            <div  id="dragFileArea" class="drag-file-area">
+                <span class="material-icons-outlined upload-icon">file_upload</span>
+                <h3 class="message"> Drag & Drop any file here </h3>
+                <label class="label"> or
+                    <span class="browse-files">
+                        <input id="fileInput" type="file" name="file" class="file-input" required multiple>
+                        <span class="browse-files-text">browser file</span>
+                        <span>from device</span>
+                    </span>
+                </label>
+            </div>
 
-        <form id="fileForm" action="/file/save" enctype="multipart/form-data" method="post" class="input-file">
-            <input type="file" name="file" required multiple>
-            <button type="submit">Store</button>
-        </form>
+            <div id="progressBarContainer">
+                <div id="progressBar"></div>
+            </div>
 
-        <div id="progressBarContainer">
-            <div id="progressBar"></div>
+            <button type="submit" class="upload-btn">Upload</button>
+
+            <div class="list">
+                <div th:each="file, iterStart : ${files}">
+                    <div th:class="${iterStart.index == 0 ? 'hidden': 'file-block'}">
+                        <div class="file-info">
+                            <span class="material-icons-outlined file-icon">description</span>
+                            <span class="file-name" th:text="${file}"></span>
+                        </div>
+                        <div class="group-btn">
+                            <form action="#" th:action="@{/file/download}" method="get" style="display: inline">
+                                <input type="hidden" th:value="${file}" name="filename">
+                                <button type="submit" style="background: none; border: none; padding: 0">
+                                    <span class="material-icons-outlined download-file-icon">download</span>
+                                </button>
+                            </form>
+
+                            <form th:if="${admin}" action="#" th:action="@{/file/delete}" method="post"
+                                  style="display: inline">
+                                <input type="hidden" th:value="${file}" name="filename">
+                                <button type="submit" style="background: none; border: none; padding: 0">
+                                    <span class="material-icons-outlined remove-file-icon">delete</span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </form>
+</div>
+<script>
 
-        <table class="list">
-            <tr th:each="file : ${files}">
-                <td width="80%"><span th:text="${file}"></span></td>
-                <td width="20%" class="icon">
-                    <form action="/file/download" method="get" style="display: inline; margin-right: 10px">
-                        <input type="hidden" th:value="${file}" name="filename">
-                        <button type="submit"><img src="/image/download.png" alt=""></button>
-                    </form>
+    const dragFileArea = document.getElementById('dragFileArea');
+    const fileInput = document.getElementById('fileInput');
 
-                    <form th:if="${admin}" action="/file/delete" method="post" style="display: inline">
-                        <input type="hidden" th:value="${file}" name="filename">
-                        <button type="submit"><img src="/image/delete-logo.png" alt=""></button>
-                    </form>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <script>
-        document.getElementById('fileForm').addEventListener('submit', function (e) {
+    ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+        dragFileArea.addEventListener(eventName, (e) => {
             e.preventDefault();
-            const form = e.target;
-            const formData = new FormData(form);
-            const xhr = new XMLHttpRequest();
-            xhr.open("POST", form.action, true);
-            document.getElementById('progressBarContainer').style.display = 'block';
-            xhr.upload.onprogress = function (event) {
-                if (event.lengthComputable) {
-                    const percentComplete = (event.loaded / event.total) * 100;
-                    document.getElementById('progressBar').style.width = percentComplete + '%';
-                }
-            };
-            xhr.onload = function () {
-                if (xhr.status === 200) {
-                    document.getElementById('progressBarContainer').style.display = 'none';
-                    document.getElementById('progressBar').style.width = '0%';
-                    window.location.reload();
-                }
-            };
-            xhr.send(formData);
+            e.stopPropagation();
         });
-    </script>
-    </body>
+    });
+
+    ['dragenter', 'dragover'].forEach(eventName => {
+        dragFileArea.addEventListener(eventName, () => {
+            dragFileArea.classList.add('dragover');
+        });
+    });
+
+    ['dragleave', 'drop'].forEach(eventName => {
+        dragFileArea.addEventListener(eventName, () => {
+            dragFileArea.classList.remove('dragover');
+        });
+    });
+
+    dragFileArea.addEventListener('drop', (e) => {
+        const files = e.dataTransfer.files;
+        fileInput.files = files;
+        const message = dragFileArea.querySelector('.message');
+        message.textContent = `${files.length} file selected: ${[...files].map(file => file.name).join(', ')}`;
+    });
+
+    fileInput.addEventListener('change', function() {
+        const files = fileInput.files;
+        const message = dragFileArea.querySelector('.message');
+        message.textContent = `${files.length} file selected: ${[...files].map(file => file.name).join(', ')}`;
+    });
+
+
+    document.getElementById('fileForm').addEventListener('submit', function (e) {
+        e.preventDefault();
+        const form = e.target;
+        const formData = new FormData(form);
+        const xhr = new XMLHttpRequest();
+
+        xhr.open("POST", form.action, true);
+        document.getElementById('progressBarContainer').style.display = 'block';
+        xhr.upload.onprogress = function (event) {
+            if (event.lengthComputable) {
+                const percentComplete = (event.loaded / event.total) * 100;
+                document.getElementById('progressBar').style.width = percentComplete + '%';
+            }
+        };
+
+        xhr.onload = function () {
+            if (xhr.status === 200) {
+                document.getElementById('progressBarContainer').style.display = 'none';
+                document.getElementById('progressBar').style.width = '0%';
+                window.location.reload();
+            }
+        };
+        xhr.send(formData);
+    });
+</script>
+</body>
 </html>

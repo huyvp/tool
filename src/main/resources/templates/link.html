@@ -1,35 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Account</title>
-    <link rel="stylesheet" th:href="@{/style.css}">
-</head>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments.html :: html_head(title=${'Link page'})}"/>
 <body>
-<div class="header">
-    <div>
-        <a href="/accounts" class="logo tab">Link Download</a>
+<div id="main">
+    <div th:replace="~{fragments.html :: header(title=${'Link Page'})}"></div>
+    <div class="content">
+        <table>
+            <tr style="border-bottom: #98ddde solid 1px">
+                <th>Name</th>
+                <th>Link</th>
+            </tr>
+            <tr>
+                <td>Download app</td>
+                <td>http://stage.sdsmoffice.com:9200/down</td>
+            </tr>
+            <tr>
+                <td>Download BOD</td>
+                <td>http://dev.sdsmoffice.com/이사회</td>
+            </tr>
+            <tr>
+                <td>Download Launcher</td>
+                <td>http://stage.sdsmoffice.com</td>
+            </tr>
+        </table>
     </div>
-</div>
-<div class="content">
-    <table>
-        <tr style="border-bottom: #98ddde solid 1px">
-            <th>Name</th>
-            <th>Link</th>
-        </tr>
-        <tr>
-            <td>Download app</td>
-            <td>http://stage.sdsmoffice.com:9200/down</td>
-        </tr>
-        <tr>
-            <td>Download BOD</td>
-            <td>http://dev.sdsmoffice.com/이사회</td>
-        </tr>
-        <tr>
-            <td>Download Launcher</td>
-            <td>http://stage.sdsmoffice.com</td>
-        </tr>
-    </table>
 </div>
 </body>
 </html>

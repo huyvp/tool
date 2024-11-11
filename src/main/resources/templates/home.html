@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head th:replace="~{fragments.html :: html_head(title=${'Home'})}"/>
+
+<body>
+<div id="main">
+    <div th:replace="~{fragments.html :: header(title=${'Home'}, tabs=${tabs})}"></div>
+    <div class="home-content">
+        <div class="home-text">
+            Welcome to tool collection. You can use any tool in below
+        </div>
+        <div class="grid-container">
+            <a class="card" th:each="tab : ${tabs}" th:href="${tab.url}">
+                <i th:text="${tab.icon}" class="material-icons-outlined"></i>
+                <h3 th:text="${tab.name}"></h3>
+            </a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

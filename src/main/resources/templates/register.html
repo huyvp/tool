@@ -10,8 +10,8 @@
             font-family: Arial, serif;
         }
 
-        .login-form {
-            max-width: 600px;
+        .register-container {
+            max-width: 700px;
             min-width: 450px;
             min-height: 300px;
             margin: auto;
@@ -22,17 +22,17 @@
             background-color: #f9f9f9;
         }
 
-        .login-form h2 {
+        .register-container h2 {
             margin-bottom: 20px;
         }
 
-        .login-form label {
+        .register-container label {
             display: block;
             margin-bottom: 5px;
         }
 
-        .login-form input[type="text"],
-        .login-form input[type="password"] {
+        .register-container input[type="text"],
+        .register-container input[type="password"] {
             width: calc(100% - 22px);
             padding: 15px 10px 15px 10px;
             margin-bottom: 15px;
@@ -40,7 +40,7 @@
             border-radius: 5px;
         }
 
-        .login-form button {
+        .register-container button {
             width: 100%;
             padding: 10px;
             background-color: #007BFF;
@@ -51,45 +51,45 @@
             font-size: 16px;
         }
 
-        .login-form button:hover {
+        .register-container button:hover {
             background-color: #0056b3;
         }
 
         @media (max-width: 768px) {
-            .login-form {
+            .register-container {
                 padding: 15px;
             }
 
-            .login-form h2 {
+            .register-container h2 {
                 font-size: 24px;
             }
 
-            .login-form input[type="text"],
-            .login-form input[type="password"] {
+            .register-container input[type="text"],
+            .register-container input[type="password"] {
                 padding: 8px;
             }
 
-            .login-form button {
+            .register-container button {
                 padding: 8px;
                 font-size: 14px;
             }
         }
 
         @media (max-width: 480px) {
-            .login-form {
+            .register-container {
                 padding: 10px;
             }
 
-            .login-form h2 {
+            .register-container h2 {
                 font-size: 20px;
             }
 
-            .login-form input[type="text"],
-            .login-form input[type="password"] {
+            .register-container input[type="text"],
+            .register-container input[type="password"] {
                 padding: 6px;
             }
 
-            .login-form button {
+            .register-container button {
                 padding: 6px;
                 font-size: 12px;
             }
@@ -98,9 +98,13 @@
 </head>
 <body>
 <div class="container">
-    <div class="login-form">
-        <h2>Welcome to tool collection.</h2>
-        <form action="#" th:action="@{/login}" method="post">
+    <div class="register-container">
+        <h2>SIGN UP</h2>
+        <form th:action="@{/users/create}" method="post" id="registerForm">
+            <div>
+                <label for="knoxId"></label>
+                <input type="text" name="knoxId" id="knoxId" placeholder="Knox id"/>
+            </div>
             <div>
                 <label for="username"></label>
                 <input type="text" name="username" id="username" placeholder="Username"/>
@@ -113,15 +117,17 @@
                 <span style="color:red;">Invalid username or password.</span>
             </div>
             <div style="margin-top: 20px">
-                <button type="submit">SIGN IN</button>
+                <button type="submit">SIGN UP</button>
             </div>
-        </form>
-        <form th:action="@{/register}" method="get" action="#">
-            <button type="submit" style="margin-top: 20px; background-color: green">
-                CREATE AN ACCOUNT
-            </button>
         </form>
     </div>
 </div>
+<script>
+    const registerForm = document.getElementById("registerForm");
+    registerForm.addEventListener("submit", function(event) {
+        this.submit();
+        alert("User created successfully!");
+    });
+</script>
 </body>
 </html>
