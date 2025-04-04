@@ -15,9 +15,10 @@ public class Tab {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     String id;
-    @Column(nullable = false, unique = true)
+    @Column(unique = true)
     String name;
     String icon;
     String url;
-    int index;
+    @Column(unique = true)
+    int level;
 }

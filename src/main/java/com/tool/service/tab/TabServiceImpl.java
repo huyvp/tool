@@ -29,7 +29,7 @@ public class TabServiceImpl implements TabService {
     @Override
     public List<Tab> getTabs() {
         return tabRepo.findAll(
-                Sort.by(Sort.Order.asc("index"))
+                Sort.by(Sort.Order.asc("level"))
         );
     }
 

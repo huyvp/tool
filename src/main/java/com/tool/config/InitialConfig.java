@@ -25,10 +25,7 @@ public class InitialConfig {
     }
 
     @Bean
-    @ConditionalOnProperty(prefix = "spring",
-            value = "datasource.driver-class-name",
-            havingValue = "org.postgresql.Driver"
-    )
+
     ApplicationRunner applicationRunner(UserRepo userRepo, RoleRepo roleRepo) {
         log.info("Initializing application start .......");
         return args -> {

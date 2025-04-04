@@ -3,3 +3,16 @@ server:
 logging:
   file:
     name: tool.log
+spring:
+  datasource:
+    url: jdbc:sqlserver://localhost:1433;databaseName=tool_database;Persist Security Info=False;MultipleActiveResultSets=False;trustServerCertificate=true;Connection Timeout=30;
+    username: sa
+    password: mssq@12345
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    defer-datasource-initialization: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.SQLServer2016Dialect

@@ -17,5 +17,5 @@ public class TabReq {
     String icon;
     @NotBlank(message = "Url tab is require")
     String url;
-    int index;
+    int level;
 }

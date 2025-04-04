@@ -44,7 +44,7 @@ public class SecurityConfig {
                 .requestMatchers(HttpMethod.GET, "/**.css").permitAll()
                 .requestMatchers(HttpMethod.POST, "/users/create").permitAll()
                 .requestMatchers("/config/**").permitAll()
-                .anyRequest().authenticated()
+                .anyRequest().permitAll()
         );
 
         httpSecurity.formLogin(form -> form
