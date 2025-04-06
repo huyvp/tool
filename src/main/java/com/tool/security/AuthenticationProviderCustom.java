@@ -47,7 +47,9 @@ public class AuthenticationProviderCustom implements AuthenticationProvider {
         List<GrantedAuthority> grantedAuthorities = new ArrayList<>();
         Set<Role> roles = user.getRoles();
         if (!roles.isEmpty()) {
-            roles.stream().map(item -> grantedAuthorities.add(new SimpleGrantedAuthority("ROLE_" + item.getName())));
+            roles.stream().map(
+                    item -> grantedAuthorities.add(new SimpleGrantedAuthority("ROLE_" + item.getName()))
+            );
         }
         UserDetails principal = new org.springframework.security.core.userdetails.User(user.getUsername(), user.getPassword(), grantedAuthorities);
         return new UsernamePasswordAuthenticationToken(principal, user.getPassword(), grantedAuthorities);

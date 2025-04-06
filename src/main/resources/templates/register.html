@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" xmlns:th="http://www.thymeleaf.org">
-    <title>Login</title>
+    <title>Sign up</title>
     <style>
         .container {
             display: flex;
@@ -49,6 +49,9 @@
             border-radius: 5px;
             cursor: pointer;
             font-size: 16px;
+        }
+        .error-message{
+            display: none;
         }
 
         .register-container button:hover {
@@ -100,33 +103,56 @@
 <div class="container">
     <div class="register-container">
         <h2>SIGN UP</h2>
-        <form th:action="@{/users/create}" method="post" id="registerForm">
+        <form id="registerForm">
             <div>
-                <label for="knoxId"></label>
-                <input type="text" name="knoxId" id="knoxId" placeholder="Knox id"/>
+                <label for="email"></label>
+                <input type="text" name="email" id="email" placeholder="Email" required/>
             </div>
             <div>
                 <label for="username"></label>
-                <input type="text" name="username" id="username" placeholder="Username"/>
+                <input type="text" name="username" id="username" placeholder="Username" required/>
             </div>
             <div>
                 <label for="password"></label>
-                <input type="password" id="password" name="password" placeholder="Password"/>
+                <input type="password" id="password" name="password" placeholder="Password" required/>
             </div>
-            <div th:if="${param.error}">
+            <div id="error-message" class="error-message">
                 <span style="color:red;">Invalid username or password.</span>
             </div>
             <div style="margin-top: 20px">
                 <button type="submit">SIGN UP</button>
             </div>
         </form>
+        <form th:action="@{/login}" method="get" action="#">
+            <button type="submit" style="margin-top: 20px; background-color: green">
+                If you have a account. Try login
+            </button>
+        </form>
     </div>
 </div>
 <script>
     const registerForm = document.getElementById("registerForm");
-    registerForm.addEventListener("submit", function(event) {
-        this.submit();
-        alert("User created successfully!");
+    registerForm.addEventListener("submit", async function (event) {
+        event.preventDefault();
+
+        const formData = new FormData(registerForm);
+
+        await fetch('/users/create', {
+            method: 'POST',
+            body: formData
+        })
+            .then(response => {
+                if (response.status === 200) {
+                    alert("User created successfully!");
+                    window.location.href = '/login';
+                } else {
+                    document.getElementById('error-message').style.display = 'block';
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                document.getElementById('error-message').style.display = 'block';
+            });
     });
 </script>
 </body>

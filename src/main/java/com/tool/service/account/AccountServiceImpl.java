@@ -57,7 +57,7 @@ public class AccountServiceImpl implements AccountService {
         User user = userRepo.findByUsername(username)
                 .orElseThrow(() -> new RuntimeException("User not exist"));
 
-        Account account = convertToAccount(accountReq, user.getKnoxId());
+        Account account = convertToAccount(accountReq, user.getEmail());
         accountRepo.save(account);
     }
 
@@ -73,7 +73,7 @@ public class AccountServiceImpl implements AccountService {
                 .orElseThrow(() -> new RuntimeException("Account not found"));
 
         account.setPassword(accountUpdate.getPassword());
-        account.setUpdatedBy(user.getKnoxId());
+        account.setUpdatedBy(user.getEmail());
 
         accountRepo.save(account);
     }
