@@ -9,11 +9,11 @@ import lombok.experimental.FieldDefaults;
 @Getter
 @Setter
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class UserReq {
+public class UserCreateRequest {
     @NotBlank(message = "Username is require")
     String username;
     @NotBlank(message = "Password is require")
     String password;
-    @NotBlank(message = "Knox id is require")
-    String knoxId;
+    @NotBlank(message = "Email id is require")
+    String email;
 }

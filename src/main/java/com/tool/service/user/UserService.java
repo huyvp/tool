@@ -1,10 +1,10 @@
 package com.tool.service.user;
 
-import com.tool.dto.UserReq;
+import com.tool.dto.UserCreateRequest;
 import com.tool.entity.User;
 
 public interface UserService {
-    void createUser(UserReq userReq, String ip);
+    User createUser(UserCreateRequest userCreateRequest, String ip);
 
     User getUser(String username);
 }

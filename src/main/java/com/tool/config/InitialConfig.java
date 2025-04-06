@@ -37,7 +37,7 @@ public class InitialConfig {
                 roles.add(adminRole);
 
                 User user = User.builder()
-                        .knoxId("nv.huy1")
+                        .email("nv.huy1")
                         .ip("107.120.121.97")
                         .username("admin")
                         .password(passwordEncoder().encode("admin_admin"))
